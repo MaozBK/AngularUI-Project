@@ -1,0 +1,146 @@
+* {
+    word-spacing: 7px; /*Specify that the space between words in <p> elements should be 30
+pixels:*/
+    line-height: 150%; /*Set the line height for the element*/
+    vertical-align: top; /*The vertical-align property sets the vertical alignment of
+an element.*/
+    font-family: georgia;
+    margin: 0;
+}
+/*-----------------------------------------------------*/
+/*---------------------grid----------------------------*/
+/*-----------------------------------------------------*/
+.gr {
+    word-spacing: -8px
+}
+
+    .gr img {
+        max-width: 100%
+    }
+/*-----------------------------------------------------*/
+/*---------------------unit----------------------------*/
+/*-----------------------------------------------------*/
+.u_1, .u_1_2, .u_1_3, .u_2_3 {
+    display: inline-block; /*Inline elements don’t start on a new line, they appear on the same
+line as the content and tags beside them*/
+    color: black;
+    font-size: 25px;
+}
+
+.u_1 {
+    display: block
+}
+
+.u_1_2 {
+    width: 50%;
+}
+.u_1_3 {
+    width: 33.33%
+}
+
+.u_2_3 {
+    width: 66.66%
+}
+/* On screens that are 700px wide or less, make the menu links stack on top of each other instead of
+next to each other */
+@media (max-width:700px) {
+    .gr > [class ^="u"] {
+        width: 100%
+    }
+}
+/*-------------------------------------------------------*/
+/*---------------------menu------------------------------*/
+/*-------------------------------------------------------*/
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    font-size: 25px;
+    display: block;
+    color: inherit;
+    line-height: 150%;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+    .menu li a:hover /* Select and style a link when you mouse over it: */ {
+        background: LightGray
+    }
+/*--------------------------------------------------------*/
+/*---------------------header-----------------------------*/
+/*--------------------------------------------------------*/
+.header {
+    text-align: center;
+    text-shadow: 3px 3px 0px #B3B3B3;
+    margin: 25px;
+}
+/*--------------------------------------------------------*/
+/*---------------------table------------------------------*/
+/*--------------------------------------------------------*/
+.table {
+    border-collapse: collapse;
+    border: 3px solid DarkGray; /* Set the collapsing borders model for two tables */
+    font-size: 22px;
+}
+
+    .table td, .table th {
+        padding: 15px;
+    }
+
+    .table thead {
+        background: LightGray;
+    }
+
+    .table td {
+        background-color: transparent
+    }
+
+.table-bordered td {
+    border-bottom: 1px solid silver;
+}
+/*---------------------------------------------------------*/
+/*---------------------button------------------------------*/
+/*---------------------------------------------------------*/
+.button {
+    font-size: 20px;
+    padding: 10px 12px; /* The CSS padding properties are used to generate space around an
+element's content, inside of any defined borders. */
+    border: 2px solid black; /* Adds borders to an element */
+    background-color: LightGray;
+    border-radius: 8px; /* Add rounded corners to the element */
+}
+
+    .button:hover {
+        background-color: silver;
+    }
+
+    .button:active {
+        background-color: DarkGray;
+    }
+/*---------------------------------------------------------*/
+/*---------------------box------------------------------*/
+/*---------------------------------------------------------*/
+.pad {
+    padding: 25px;
+}
+
+.border_line {
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+}
+
+.footer {
+    background-color: GhostWhite;
+    border-top: 1px #D3D3D3 solid;
+    font-size: 90%;
+    line-height: 100%;
+} 
